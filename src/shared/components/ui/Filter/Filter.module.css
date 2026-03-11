@@ -1,0 +1,123 @@
+.container {
+    position: relative;
+    max-width: 24rem;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.filterButtonInactive {
+    color: #ffffff;
+    background: none;
+}
+
+.filterButtonInactive:hover {
+    background-color: rgba(217, 217, 255, 0.35);
+}
+
+.filterButtonActive {
+    background-color: rgb(230, 255, 238);
+    color: #097a03;
+}
+
+.filterButtonActive:hover {
+    color: #1f4d1d;
+}
+
+.clearButton {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: rgb(230, 255, 238);
+    color: #097a03;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+}
+
+.clearButton:hover {
+    color: #1f4d1d;
+}
+
+.dropdown {
+    position: absolute;
+    z-index: 50;
+    margin-top: 0.5rem;
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.dropdownContent {
+    padding: 0.5rem;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+}
+
+.searchInput:focus {
+    outline: none;
+    /* ring: 2px solid #3b82f6; */
+}
+
+.estadosList {
+    max-height: 15rem;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+}
+
+.estadoItem {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.875rem;
+}
+
+.estadoItem:hover {
+    background-color: rgba(217, 217, 255, 0.35);
+    color: black;
+}
+
+.estadoSelected {
+    color: #097a03;
+    font-weight: 600;
+}
+
+.noResults {
+    padding: 0.5rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 100%;
+    }
+}

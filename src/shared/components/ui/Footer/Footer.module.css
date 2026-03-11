@@ -1,0 +1,15 @@
+.footer {
+    background-color: #465FB9;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.secaoFooter {
+    max-width: 25%;
+}
+
+@media (max-width: 768px) {
+    .secaoFooter {
+        max-width: 100%;
+    }
+}
