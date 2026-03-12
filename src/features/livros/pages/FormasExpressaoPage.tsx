@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react"
-import { bensMock } from "../../bens/mock/bensMock"
+import api from '../../../services/api' 
 import { Bem } from "../../bens/types/Bem"
 import CardBem from "../../bens/components/CardBem/CardBem"
 import ModalBem from "../../bens/components/ModalBem/ModalBem"
@@ -7,10 +7,27 @@ import Filter from "../../../shared/components/ui/Filter"
 import styles from './FormasExpressao.module.css';
 
 export default function FormasExpressaoPage() {
+    const [bens, setBens] = useState<Bem[]>([]) 
+    const [loading, setLoading] = useState(true) 
     const [filtroEstado, setFiltroEstado] = useState<string | null>(null)
     const [bemSelecionado, setBemSelecionado] = useState<Bem | null>(null)
     const [showTooltip, setShowTooltip] = useState(false)
     const tooltipRef = useRef<HTMLSpanElement>(null)
+
+    useEffect(() => {
+        carregarBens();
+    }, []);
+
+    const carregarBens = async () => {
+        try {
+            const response = await api.get('/bens');
+            setBens(response.data);
+        } catch (error) {
+            console.error('Erro ao carregar bens:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -31,16 +48,23 @@ export default function FormasExpressaoPage() {
         };
     }, [showTooltip]);
 
-    const bensFiltrados =
-        !filtroEstado
-            ? bensMock
-            : bensMock.filter((bem) =>
-                bem.estados.includes(filtroEstado)
-            )
+    const bensFiltrados = !filtroEstado
+        ? bens
+        : bens.filter((bem) => bem.estados.includes(filtroEstado));
 
     const bensOrdenados = [...bensFiltrados].sort(
         (a, b) => parseInt(a.date) - parseInt(b.date)
-    )
+    );
+
+    if (loading) {
+        return (
+            <div id="livro" className={styles.livroSection}>
+                <div className="container text-center py-20">
+                    <p className="text-white">Carregando...</p>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div id="livro" className={styles.livroSection}>

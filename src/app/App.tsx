@@ -1,24 +1,43 @@
-import Header from "../shared/components/navigation/Header/Header";
-import Footer from "../shared/components/ui/Footer/Footer";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from '../features/auth/pages/Login';
+import AdminLayout from '../features/admin/components/AdminLayout';
+import AdminBens from '../features/admin/pages/AdminBens';
+import AdminBemForm from '../features/admin/pages/AdminBemForm';
 
-import Inicio from "../pages/Inicio/Inicio";
-import Sobre from "../pages/Sobre/Sobre";
-import Conceitos from "../pages/Conceitos/Conceitos";
-import FormasExpressaoPage from "../features/livros/pages/FormasExpressaoPage";
+// Suas páginas existentes
+import Inicio from '../pages/Inicio/Inicio';
+import Sobre from '../pages/Sobre/Sobre';
+import Conceitos from '../pages/Conceitos/Conceitos';
+import FormasExpressaoPage from '../features/livros/pages/FormasExpressaoPage';
+import Header from '../shared/components/navigation/Header/Header';
+import Footer from '../shared/components/ui/Footer/Footer';
 
 export default function App() {
   return (
-    <div className="font-sans text-base leading-relaxed text-gray-800">
-      <Header />
+    <BrowserRouter>
+      <Routes>
+        {/* Rotas públicas */}
+        <Route path="/" element={
+          <>
+            <Header />
+            <main>
+              <Inicio />
+              <Sobre />
+              <Conceitos />
+              <FormasExpressaoPage />
+            </main>
+            <Footer />
+          </>
+        } />
 
-      <main>
-        <Inicio />
-        <Sobre />
-        <Conceitos />
-        <FormasExpressaoPage />
-      </main>
-
-      <Footer />
-    </div>
+        {/* Rotas de admin */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route path="bens" element={<AdminBens />} />
+          <Route path="bens/novo" element={<AdminBemForm />} />
+          <Route path="bens/editar/:id" element={<AdminBemForm />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
