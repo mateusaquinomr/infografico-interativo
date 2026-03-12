@@ -80,7 +80,7 @@ A primeira versão apresenta o **Livro das Formas de Expressão**, com possibili
 
 ---
 
-Ilustrações
+## Ilustrações
 
 As ilustrações utilizadas no projeto foram desenvolvidas por Pamela de Castro, contribuindo para a representação das manifestações culturais apresentadas no infográfico.
 
@@ -89,6 +89,7 @@ As ilustrações utilizadas no projeto foram desenvolvidas por Pamela de Castro,
 ## Autor
 
 Mateus de Aquino
+
 Universidade Federal do Ceará
 
 
