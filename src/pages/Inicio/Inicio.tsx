@@ -1,6 +1,6 @@
-import titulo from '../../assets/images/titulo.svg';
-import imgEsquerda from '../../assets/images/figura-inicio-left-side.png';
-import imgDireita from '../../assets/images/figura-inicio-right-side.png';
+const titulo = '/images/titulo.svg';
+const imgEsquerda = '/images/figura-inicio-left-side.png';
+const imgDireita = '/images/figura-inicio-right-side.png';
 import styles from './Inicio.module.css';
 
 export default function Inicio() {

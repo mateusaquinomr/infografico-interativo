@@ -1,7 +1,5 @@
-import imagemDestaque from '../../assets/images/imagem-destaque-sobre.svg';
-// import seta from '../../assets/images/seta-sobre.svg';
-// import { useEffect, useState } from 'react';
-import divisorBandeirinhas from "../../assets/images/divisor-bandeirinhas.svg";
+const imagemDestaque = '/images/imagem-destaque-sobre.svg';
+const divisorBandeirinhas = '/images/divisor-bandeirinhas.svg';
 import styles from './Sobre.module.css';
 
 export default function Sobre() {
