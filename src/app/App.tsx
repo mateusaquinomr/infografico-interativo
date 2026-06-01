@@ -4,7 +4,6 @@ import AdminLayout from '../features/admin/components/AdminLayout';
 import AdminBens from '../features/admin/pages/AdminBens';
 import AdminBemForm from '../features/admin/pages/AdminBemForm';
 
-// Suas páginas existentes
 import Inicio from '../pages/Inicio/Inicio';
 import Sobre from '../pages/Sobre/Sobre';
 import Conceitos from '../pages/Conceitos/Conceitos';
@@ -16,7 +15,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Rotas públicas */}
+
         <Route path="/" element={
           <>
             <Header />
@@ -30,7 +29,6 @@ export default function App() {
           </>
         } />
 
-        {/* Rotas de admin */}
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="bens" element={<AdminBens />} />
