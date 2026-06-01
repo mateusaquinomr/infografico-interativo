@@ -1,5 +1,5 @@
 .inicioSection {
-    background-image: url('../../assets/images/background-inicio.jpg');
+    background-image: url('/public/images/background-inicio.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
