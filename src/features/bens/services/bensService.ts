@@ -13,17 +13,15 @@ export function createBem(bem: Bem) {
     bensMock.push(bem)
 }
 
-export function updateBem(id: string, updated: Bem) {
+export function updateBem(id: number, updated: Bem) {
     const index = bensMock.findIndex(b => b.id === id)
-
     if (index !== -1) {
         bensMock[index] = updated
     }
 }
 
-export function deleteBem(id: string) {
+export function deleteBem(id: number) {
     const index = bensMock.findIndex(b => b.id === id)
-
     if (index !== -1) {
         bensMock.splice(index, 1)
     }
