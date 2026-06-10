@@ -9,7 +9,7 @@ import Sobre from '../pages/Sobre/Sobre';
 import Conceitos from '../pages/Conceitos/Conceitos';
 import FormasExpressaoPage from '../features/livros/pages/FormasExpressaoPage';
 import Header from '../shared/components/navigation/Header/Header';
-import Footer from '../shared/components/ui/Footer/Footer';
+import Footer from '../shared/components/navigation/Footer/Footer';
 
 export default function App() {
   return (

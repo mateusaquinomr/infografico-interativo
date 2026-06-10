@@ -1,6 +1,6 @@
-const patrimonio = '/images/backgrounds/background-card-patrimonio.jpg';
-const livro = '/images/backgrounds/background-card-livro.jpg';
-const registro = '/images/backgrounds/background-card-registro.jpg';
+import patrimonio from '@/assets/backgrounds/background-card-patrimonio.jpg';
+import livro from '@/assets/backgrounds/background-card-livro.jpg';
+import registro from '@/assets/backgrounds/background-card-registro.jpg';
 import { useState } from 'react';
 import styles from './Conceitos.module.css';
 

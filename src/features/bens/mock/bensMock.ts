@@ -1,8 +1,8 @@
 import { Bem } from "../types/Bem";
 
 // Imagens das figuras
-const arteKusiwa = '/images/figuras/arte-kusiwa-figura.png';
-const sambaRodaReconcavo = '/images/figuras/samba-roda-reconcavo.png';
+const arteKusiwa = '/images/figuras/arte-kusiwa.png';
+const sambaRodaReconcavo = '/images/figuras/samba-roda.png';
 const jongoSudeste = '/images/figuras/jongo-sudeste.png';
 const frevo = '/images/figuras/frevo.png';
 const tamborCrioulaMaranhao = '/images/figuras/tambor-crioula.png';
@@ -13,9 +13,9 @@ const ritxoko = '/images/figuras/ritxoko.png';
 const fandangoCaicara = '/images/figuras/fandango-caicara.png';
 const carimbo = '/images/figuras/carimbo.png';
 const maracatuNacao = '/images/figuras/maracatu-nacao.png';
-const maracatuBaqueSolto = '/images/figuras/maracatu-baque-solto.png';
+const maracatuBaqueSolto = '/images/figuras/maracatu-baque.png';
 const cavaloMarinho = '/images/figuras/cavalo-marinho.png';
-const teatroBonecosNordeste = '/images/figuras/teatro-bonecos-nordeste.png';
+const teatroBonecosNordeste = '/images/figuras/teatro-bonecos.png';
 const caboclinho = '/images/figuras/caboclinho.png';
 const literaturaCordel = '/images/figuras/literatura-cordel.png';
 const marabaixo = '/images/figuras/marabaixo.png';
@@ -28,29 +28,29 @@ const sambaBumbo = '/images/figuras/samba-bumbo.png';
 
 // Imagens das localizações
 const arteKusiwaLocalizacao = '/images/localizacao/arte-kusiwa-localizacao.svg';
-const sambaRodaReconcavoLocalizacao = '/images/localizacao/samba-roda-reconcavo-localizacao.svg';
+const sambaRodaReconcavoLocalizacao = '/images/localizacao/samba-roda-localizacao.svg';
 const jongoSudesteLocalizacao = '/images/localizacao/jongo-sudeste-localizacao.svg';
 const frevoLocalizacao = '/images/localizacao/frevo-localizacao.svg';
-const tamborCrioulaMaranhaoLocalizacao = '/images/localizacao/tambor-crioula-maranhão-localizacao.svg';
-const matrizesSambaLocalizacao = '/images/localizacao/matrizes-samba-rj-localizacao.svg';
+const tamborCrioulaMaranhaoLocalizacao = '/images/localizacao/tambor-crioula-localizacao.svg';
+const matrizesSambaLocalizacao = '/images/localizacao/matrizes-samba-localizacao.svg';
 const rodaCapoeiraLocalizacao = '/images/localizacao/roda-capoeira-localizacao.svg';
-const toqueSinosLocalizacao = '/images/localizacao/toque-sinos-mg-localizacao.svg';
+const toqueSinosLocalizacao = '/images/localizacao/toque-sinos-localizacao.svg';
 const ritxokoLocalizacao = '/images/localizacao/ritxoko-localizacao.svg';
 const fandangoCaicaraLocalizacao = '/images/localizacao/fandango-caicara-localizacao.svg';
 const carimboLocalizacao = '/images/localizacao/carimbo-localizacao.svg';
 const maracatuNacaoLocalizacao = '/images/localizacao/maracatu-nacao-localizacao.svg';
-const maracatuBaqueSoltoLocalizacao = '/images/localizacao/maracatu-baque-solto-localizacao.svg';
+const maracatuBaqueSoltoLocalizacao = '/images/localizacao/maracatu-baque-localizacao.svg';
 const cavaloMarinhoLocalizacao = '/images/localizacao/cavalo-marinho-localizacao.svg';
-const teatroBonecosNordesteLocalizacao = '/images/localizacao/teatro-bonecos-nordeste-localizacao.svg';
+const teatroBonecosNordesteLocalizacao = '/images/localizacao/teatro-bonecos-localizacao.svg';
 const caboclinhoLocalizacao = '/images/localizacao/caboclinho-localizacao.svg';
 const literaturaCordelLocalizacao = '/images/localizacao/literatura-cordel-localizacao.svg';
 const marabaixoLocalizacao = '/images/localizacao/marabaixo-localizacao.svg';
 const cirandaNordesteLocalizacao = '/images/localizacao/ciranda-nordeste-localizacao.svg';
 const repenteLocalizacao = '/images/localizacao/repente-localizacao.svg';
 const matrizesForroLocalizacao = '/images/localizacao/matrizes-forro-localizacao.svg';
-const arteSanteiraLocalizacao = '/images/localizacao/arte-santeira-pi-localizacao.svg';
+const arteSanteiraLocalizacao = '/images/localizacao/arte-santeira-localizacao.svg';
 const choroLocalizacao = '/images/localizacao/choro-localizacao.svg';
-const sambaBumboLocalizacao = '/images/localizacao/samba-bumbo-sp-localizacao.svg';
+const sambaBumboLocalizacao = '/images/localizacao/samba-bumbo-localizacao.svg';
 
 export const bensMock: Bem[] = [
     {

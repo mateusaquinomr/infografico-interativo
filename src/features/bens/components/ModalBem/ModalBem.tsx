@@ -26,20 +26,25 @@ const ModalBem = ({ bem, onClose }: ModalBemProps) => {
         bem.estados.includes(estado)
     );
 
-    let ajusteImagem = "";
-    if (!temTodosEstados) {
-        if (bem.estados.length > 10) {
-            ajusteImagem = "md:-mt-60 md:-ml-10";
-        } else if (bem.estados.length > 7) {
-            ajusteImagem = "md:-mt-40 md:-ml-36";
-        } else if (bem.estados.length > 5) {
-            ajusteImagem = "md:-mt-40";
-        } else if (bem.estados.length > 3) {
-            ajusteImagem = "md:-mt-20";
-        } else if (bem.estados.length > 2) {
-            ajusteImagem = "md:-mt-12";
-        }
-    }
+    const getAjusteImagem = () => {
+        if (temTodosEstados) return "";
+
+        const total = bem.estados.length;
+
+        if (total <= 2) return "md:-mt-16";
+        if (total <= 4) return "md:-mt-16";
+        if (total <= 6) return "md:-mt-24";
+        if (total <= 8) return "md:-mt-16";
+        if (total <= 10) return "md:-mt-8";
+        if (total == 12) return "md:-mt-48";
+        if (total == 14) return "md:-mt-56";
+        if (total > 12) return "md:-mt-64";
+
+
+        return "";
+    };
+
+    const ajusteImagem = getAjusteImagem();
 
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4" onClick={onClose}>

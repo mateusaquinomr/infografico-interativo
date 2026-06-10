@@ -1,6 +1,7 @@
-const titulo = '/images/titulo.svg';
-const imgEsquerda = '/images/figura-inicio-left-side.png';
-const imgDireita = '/images/figura-inicio-right-side.png';
+import titulo from '@/assets/brand/titulo.svg';
+import bgInicio from '@/assets/backgrounds/background-inicio.jpg';
+import imgEsquerda from '@/assets/illustrations/figura-inicio-left-side.png';
+import imgDireita from '@/assets/illustrations/figura-inicio-right-side.png';
 import styles from './Inicio.module.css';
 
 export default function Inicio() {
@@ -15,6 +16,7 @@ export default function Inicio() {
     <section
       id="inicio"
       className={`relative overflow-hidden ${styles.inicioSection}`}
+      style={{ backgroundImage: `url(${bgInicio})` }}
     >
       <img
         src={imgEsquerda}

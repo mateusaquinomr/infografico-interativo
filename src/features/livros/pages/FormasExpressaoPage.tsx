@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react"
-import api from '../../../services/api' 
+import api from '../../../services/api'
 import { Bem } from "../../bens/types/Bem"
 import CardBem from "../../bens/components/CardBem/CardBem"
 import ModalBem from "../../bens/components/ModalBem/ModalBem"
@@ -7,8 +7,8 @@ import Filter from "../../../shared/components/ui/Filter"
 import styles from './FormasExpressao.module.css';
 
 export default function FormasExpressaoPage() {
-    const [bens, setBens] = useState<Bem[]>([]) 
-    const [loading, setLoading] = useState(true) 
+    const [bens, setBens] = useState<Bem[]>([])
+    const [loading, setLoading] = useState(true)
     const [filtroEstado, setFiltroEstado] = useState<string | null>(null)
     const [bemSelecionado, setBemSelecionado] = useState<Bem | null>(null)
     const [showTooltip, setShowTooltip] = useState(false)
@@ -98,13 +98,17 @@ export default function FormasExpressaoPage() {
                 </div>
 
                 <div className={styles.gridContainer}>
-                    {bensOrdenados.map((bem) => (
-                        <CardBem
-                            key={bem.id}
-                            bem={bem}
-                            onClick={() => setBemSelecionado(bem)}
-                        />
-                    ))}
+                    {bensOrdenados.map((bem) => {
+                        console.log(bem.image, bem.localizacao);
+
+                        return (
+                            <CardBem
+                                key={bem.id}
+                                bem={bem}
+                                onClick={() => setBemSelecionado(bem)}
+                            />
+                        );
+                    })}
                 </div>
 
                 {bemSelecionado && (

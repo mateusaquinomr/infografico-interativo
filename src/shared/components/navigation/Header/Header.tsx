@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
-import iconeLogo from "../../../../assets/icone-logo.svg";
+import iconeLogo from "../../../../assets/brand/icone-logo.svg";
 import styles from './Header.module.css';
 
 export default function Header() {

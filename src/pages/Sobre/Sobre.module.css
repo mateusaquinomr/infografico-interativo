@@ -25,14 +25,14 @@
     }
 }
 
-.imagemDestaque {
+.imgSobre {
     width: 35%;
     height: auto;
     margin-left: 3rem;
 }
 
 @media (max-width: 1024px) {
-    .imagemDestaque {
+    .imgSobre {
         display: none;
     }
 }

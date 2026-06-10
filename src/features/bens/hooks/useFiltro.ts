@@ -1,28 +1,26 @@
 import { useState, useMemo } from "react"
 import { Bem } from "../types/Bem"
-import { bensMock } from "../mock/bensMock"
 
-export function useFiltro() {
+export function useFiltro(bens: Bem[]) {
 
     const [filtroEstados, setFiltroEstados] = useState<string[]>([])
-    const [bemSelecionado, setBemSelecionado] = useState<Bem | null>(null)
 
     const bensFiltrados = useMemo(() => {
 
         if (filtroEstados.length === 0) {
-            return bensMock
+            return bens
         }
 
-        return bensMock.filter((bem: Bem) =>
-            bem.estados.some((e: string) => filtroEstados.includes(e))
+        return bens.filter((bem) =>
+            bem.estados.some((e) => filtroEstados.includes(e))
         )
 
-    }, [filtroEstados])
+    }, [filtroEstados, bens])
 
     const bensOrdenados = useMemo(() => {
 
         return [...bensFiltrados].sort(
-            (a, b) => a.anoRegistro - b.anoRegistro
+            (a, b) => parseInt(a.date) - parseInt(b.date)
         )
 
     }, [bensFiltrados])
@@ -30,8 +28,6 @@ export function useFiltro() {
     return {
         filtroEstados,
         setFiltroEstados,
-        bemSelecionado,
-        setBemSelecionado,
         bensOrdenados,
     }
 }

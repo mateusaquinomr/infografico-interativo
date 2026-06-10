@@ -1,5 +1,5 @@
-const imagemDestaque = '/images/imagem-destaque-sobre.svg';
-const divisorBandeirinhas = '/images/divisor-bandeirinhas.svg';
+import imgSobre from '@/assets/illustrations/img-sobre.svg';
+import divisorBandeirinhas from '@/assets/illustrations/divisor-bandeirinhas.svg';
 import styles from './Sobre.module.css';
 
 export default function Sobre() {
@@ -25,9 +25,9 @@ export default function Sobre() {
       <div className="container">
         <div className={styles.contentWrapper}>
           <img
-            src={imagemDestaque}
+            src={imgSobre}
             alt="Imagem ilustrativa"
-            className={styles.imagemDestaque}
+            className={styles.imgSobre}
           />
 
           <div className={styles.textContainer}>
