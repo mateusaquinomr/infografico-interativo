@@ -29,7 +29,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Mateus de Aquino (Desenvolvedor Full-Stack e Designer UI)
+                Mateus de Aquino (Desenvolvedor Full-Stack e UI)
               </a>
 
               <br />
