@@ -4,12 +4,9 @@ import AdminLayout from '../features/admin/components/AdminLayout';
 import AdminBens from '../features/admin/pages/AdminBens';
 import AdminBemForm from '../features/admin/pages/AdminBemForm';
 
-import Inicio from '../pages/Inicio/Inicio';
-import Sobre from '../pages/Sobre/Sobre';
-import Conceitos from '../pages/Conceitos/Conceitos';
-import FormasExpressaoPage from '../features/livros/pages/FormasExpressaoPage';
-import Header from '../shared/components/navigation/Header/Header';
-import Footer from '../shared/components/navigation/Footer/Footer';
+import Home from '../features/home/pages/Home';
+import Navbar from '../shared/components/navigation/navbar/Navbar';
+import Footer from '../shared/components/navigation/footer/Footer';
 
 export default function App() {
   return (
@@ -18,12 +15,9 @@ export default function App() {
 
         <Route path="/" element={
           <>
-            <Header />
+            <Navbar />
             <main>
-              <Inicio />
-              <Sobre />
-              <Conceitos />
-              <FormasExpressaoPage />
+              <Home />
             </main>
             <Footer />
           </>

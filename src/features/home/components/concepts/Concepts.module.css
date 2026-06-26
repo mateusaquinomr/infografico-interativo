@@ -1,0 +1,116 @@
+.conceptsSection {
+    background-color: #388131;
+    background-size: cover;
+    background-position: top;
+    padding: 8rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 4.5rem;
+    color: #f7a453;
+    font-size: 1.5rem;
+    font-weight: 800;
+    -webkit-text-stroke: 0.4px #7d5346;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 2.25rem;
+    }
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100%;
+    height: 24rem;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 18rem;
+    }
+}
+
+.perspective {
+    perspective: 1000px;
+}
+
+.cardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+.cardFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+}
+
+.cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.cardTitle {
+    font-weight: bold;
+    font-size: 1.25rem;
+    max-width: 100px;
+    color: #F7E6D6;
+    text-align: left;
+    line-height: 1.3;
+    text-shadow: -1px 1px rgba(0, 0, 0, 0.1),
+        -1px 2px rgba(0, 0, 0, 0.1),
+        -1px 2px rgba(0, 0, 0, 0.1),
+        -1px 2px rgba(0, 0, 0, 0.1),
+        -1px 2px rgba(0, 0, 0, 0.1),
+        -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cardDescription {
+    text-align: center;
+    color: #374151;
+    font-size: 0.875rem;
+}
