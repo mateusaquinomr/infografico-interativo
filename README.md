@@ -1,4 +1,4 @@
-````markdown
+
 <p align="center">
   <img src="./docs/images/home.gif" alt="Preview do Infográfico Interativo" width="100%">
 </p>
