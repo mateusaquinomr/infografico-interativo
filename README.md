@@ -204,7 +204,7 @@ As ilustrações utilizadas na plataforma foram desenvolvidas exclusivamente par
 
 | Página Inicial | Livro das Formas | Informações |
 |----------------|------------------|-------------|
-| ![](docs/images/home.png) | ![](docs/images/cards.png) | ![](docs/images/overlay.png) |
+| ![](docs/images/home.PNG) | ![](docs/images/cards.PNG) | ![](docs/images/overlay.PNG) |
 
 ---
 
