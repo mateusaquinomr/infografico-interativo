@@ -226,10 +226,10 @@ Este projeto reúne conhecimentos em diferentes áreas do desenvolvimento e do d
 
 # Equipe
 
-| Integrante | Responsabilidade |
-|------------|------------------|
-| **Mateus de Aquino** | Desenvolvimento Full-Stack, Arquitetura da Aplicação, UX/UI Design, Visualização da Informação e Pesquisa |
-| **Pamela de Castro** | Ilustrações e artes |
+| Integrante  | Responsabilidade |
+|------------ |------------------|
+| **Mateus de Aquino**  | Desenvolvimento Full-Stack, Arquitetura da Aplicação, UX/UI Design, Visualização da Informação e Pesquisa |
+| **Pamela de Castro**  | Ilustrações e artes |
 
 ---
 
