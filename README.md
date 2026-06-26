@@ -4,7 +4,7 @@
 </p>
 
 <h1 align="center">
-  Infográfico Interativo – Livro das Formas de Expressão
+  Infográfico Interativo - Livro das Formas de Expressão
 </h1>
 
 <p align="center">
